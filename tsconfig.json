@@ -1,0 +1,16 @@
+{
+    "include": ["./src/**/*"],
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@server/*": ["../server/*"],
+            "@contexts/*": ["src/contexts/*"]
+        },
+        "target": "ES6",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "noImplicitAny": true
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "data": {
+        "0": {
+            "class": "Math",
+            "todo": "#42",
+            "due": "2021-10-24 00:00",
+            "done": false
+        },
+        "1": {
+            "class": "Math",
+            "todo": "#43",
+            "due": "2021-10-24 08:00",
+            "done": true
+        },
+        "3": {
+            "class": "Physics",
+            "todo": "#50",
+            "due": "2021-10-24 08:30",
+            "done": false
+        }
+    },
+    "removed": ["2"]
+}

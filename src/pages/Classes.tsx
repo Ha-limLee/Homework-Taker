@@ -22,11 +22,12 @@ export default function Classes () {
     const classified: {[key: string]: cell[]} = {};
 
     Object.values(homeworkSet).forEach((val) => {
-        if (!val.done && !classified[val.class]) {
-            let obj = {...val} as cell;
+        if (val.done || val.class === '') return;
+
+        let obj = {...val} as cell;
+        if (!classified[val.class]) {
             classified[val.class] = [obj];
-        } else if (!val.done) {
-            let obj = {...val} as cell;
+        } else {
             classified[val.class].push(obj);
         }
     });

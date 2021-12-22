@@ -27,7 +27,7 @@ function userDataReducer(state: UserDataState, action: UserDataAction): UserData
             }
         case 'add':
             const next = state.removed.pop();
-            const added = action?.value || {class: undefined, todo: undefined, due: undefined, done: false};
+            const added = action?.value || {class: '', todo: '', due: '', done: false};
             
             return clone.produce(state, (copy) => {
                 copy.changed = true;

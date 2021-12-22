@@ -9,12 +9,12 @@ const containerStyle: React.CSSProperties = {
 };
 
 const rowStyle: React.CSSProperties = {
-    backgroundColor: '#59856a',
+    backgroundColor: '#5F9EA0',
     marginTop: '2px',
     marginBottom: '2px',
 };
 
-const rowStyles = [rowStyle, {...rowStyle, backgroundColor: '#808080'}];
+const rowStyles = [rowStyle, {...rowStyle, backgroundColor: '#2F4F4F'}];
 
 export default function ClassList ({subject, data}: {subject: string, data: {todo: string, due: string}[]}) {
     return (

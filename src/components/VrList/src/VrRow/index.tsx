@@ -22,7 +22,7 @@ const validate = (value: string) => {
     return arr?.every((val, idx) => val.length === rule[idx]);
 }
 
-export default function VrRow({id, task, dispatch}: {id: string, task: Homework, dispatch: React.Dispatch<UserDataAction>}) {
+export default function VrRow({id, task, style, dispatch}: {id: string, task: Homework, style: React.CSSProperties, dispatch: React.Dispatch<UserDataAction>}) {
     const onDueChange = React.useCallback(
         debounce((e: React.ChangeEvent<HTMLInputElement>)=>{
             const value = e.target.value;
@@ -72,7 +72,7 @@ export default function VrRow({id, task, dispatch}: {id: string, task: Homework,
     }
 
     return (
-        <tr style={doneStyle}>
+        <tr style={{...doneStyle, ...style}}>
             <Done checked={task.done} onChange={onDoneChange}/>
             <Class doneStyle={doneStyle} subject={task.class} onInput={onClassChange}/>
             <Due doneStyle={doneStyle} due={task.due} onInput={onDueChange} />

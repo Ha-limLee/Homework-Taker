@@ -5,7 +5,8 @@
         "baseUrl": ".",
         "paths": {
             "@server/*": ["../server/*"],
-            "@contexts/*": ["src/contexts/*"]
+            "@contexts/*": ["src/contexts/*"],
+            "@components/*": ["src/components/*"]
         },
         "target": "ES6",
         "jsx": "react",

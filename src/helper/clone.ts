@@ -28,7 +28,7 @@ const deepCopy = (data: any) => {
     return result
 }
 
-const produce = (data: any, fn: (copy: any)=>void) => {
+const produce = <T>(data: T, fn: (copy: T)=>void): T => {
     const copy = deepCopy(data)
     fn (copy)
     return copy

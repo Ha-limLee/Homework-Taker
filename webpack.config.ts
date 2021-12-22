@@ -21,7 +21,8 @@ const config: webpack.Configuration = {
         extensions: ['.tsx', '.ts', '.js'],
         alias: {
             '@server': path.resolve(__dirname, "../server"),
-            '@contexts': path.resolve(__dirname, "src/contexts")
+            '@contexts': path.resolve(__dirname, "src/contexts"),
+            '@components': path.resolve(__dirname, "src/components")
         }
     }
 };
